@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="header">Twilio SMS</div>
+  <div class="body clearfix" >
+    <div class="left clearfix">
+      <div class="left-area">
+        <input type="file" id="inputFile" (change)="onChange($event)">
+      </div>
+      <div class="right-area">
+        <h4>  {{fileContent}} </h4>
+      </div>
+    </div>
+    <div class="right clearfix">
+      <div class="child-left">
+        <mat-form-field appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="child-right">
+        <div class="ngx-timepicker-field-example">
+          <ngx-timepicker-field [format]="24" [defaultTime]="'23:11'" [(ngModel)]="time"></ngx-timepicker-field>
+        </div>
+      </div>
+      <div class="child-left-2">
+        <textarea [(ngModel)]="message" placeholder="  Please Enter Your Message"></textarea>
+        <button mat-raised-button color="accent" (click)="setTimeAndMessage()" style="background: #00bffe">Submit</button>
+        <button mat-raised-button color="accent" (click)="setNumbers()" style="background: #00bffe">Confirm No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

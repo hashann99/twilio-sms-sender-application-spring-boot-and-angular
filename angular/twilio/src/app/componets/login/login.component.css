@@ -1,0 +1,20 @@
+*{
+  height:100%;
+  width:100%;
+  font-family: "Adobe Garamond Pro";
+}
+.login{
+  display: flex;
+}
+input{
+  height: 25px;
+  width: 30%;
+  margin-top: 5px;
+}
+button{
+  margin-top: 5px;
+  height: 35px;
+  width: 31%;
+}
+
+
